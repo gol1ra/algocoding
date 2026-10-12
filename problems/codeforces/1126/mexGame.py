@@ -1,5 +1,6 @@
 import sys
 
+
 if __name__ == "__main__":
   t = sys.stdin.readline().rstrip()
   out = []
@@ -9,12 +10,10 @@ if __name__ == "__main__":
     
     d = {}
     for i in c:
-      d[c] = d.get(c, 0) + 1
+      d[i] = d.get(i, 0) + 1
     
-    for _, value in d.items():
-      if value %2 != 0:
-        out.append("YES")
-    out.append("NO")
+    a = {}
+    b = {}
         
     
   sys.stdout.write("\n".join(map(str, out)) + "\n")
