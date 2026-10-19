@@ -1,3 +1,2 @@
-practicing algorithms via yandex coderun etc
-building small data structure/manipulation tools lib for leetcode style questions
+practicing algorithms via coderun codeforces leetcode
 'uv' based
