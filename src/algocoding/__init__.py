@@ -201,3 +201,22 @@ class MinHeap():
 
     self._items[i] = n
     
+class Tools():
+  
+  @staticmethod
+  def prefixSum(nums):
+    """prefix sum of a int/float type"""
+    r = list(nums)
+    for i in range(1,len(nums)):
+      r[i] += r[i-1]
+      
+    return r
+  
+  @staticmethod
+  def suffixSum(nums):
+      """suffix sum of a int/float type"""
+      r = list(nums)
+      for i in range(len(nums)-2, -1, -1):
+        r[i] += r[i+1]
+        
+      return r
